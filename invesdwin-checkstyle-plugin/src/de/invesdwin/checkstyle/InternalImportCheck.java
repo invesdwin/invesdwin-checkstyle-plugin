@@ -13,10 +13,10 @@ public class InternalImportCheck extends Check {
             + "and needs to be on the same internal level.";
     private String packageDef;
 
-    private String internalPackage = ".internal";
+    private String internalPackageName = ".internal";
 
     public void setInternalPackageName(final String value) {
-        internalPackage = "." + value;
+        internalPackageName = "." + value;
     }
 
     @Override
@@ -50,17 +50,17 @@ public class InternalImportCheck extends Check {
         }
 
         // import is no internal import
-        if (!importDef.contains(internalPackage)) {
+        if (!importDef.contains(internalPackageName)) {
             return false;
         }
 
         // remove everything after internal
-        final String importDefAfterLastInternal = importDef.substring(0, importDef.lastIndexOf(internalPackage)
-                + internalPackage.length());
+        final String importDefAfterLastInternal = importDef.substring(0, importDef.lastIndexOf(internalPackageName)
+                + internalPackageName.length());
         String packageDefAfterLastInternal;
-        if (packageDef.contains(internalPackage)) {
-            packageDefAfterLastInternal = packageDef.substring(0, packageDef.lastIndexOf(internalPackage)
-                    + internalPackage.length());
+        if (packageDef.contains(internalPackageName)) {
+            packageDefAfterLastInternal = packageDef.substring(0, packageDef.lastIndexOf(internalPackageName)
+                    + internalPackageName.length());
         } else {
             packageDefAfterLastInternal = packageDef;
         }
@@ -71,8 +71,8 @@ public class InternalImportCheck extends Check {
         }
 
         // in this internal package
-        final int abstandAnzahlInternals = Math.abs(countMatches(importDef, internalPackage)
-                - countMatches(packageDef, internalPackage));
+        final int abstandAnzahlInternals = Math.abs(countMatches(importDef, internalPackageName)
+                - countMatches(packageDef, internalPackageName));
         if (abstandAnzahlInternals == 1 && importDef.startsWith(packageDef)) {
             return false;
         }
