@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>de.invesdwin</groupId>
+	<artifactId>invesdwin-checkstyle-plugin</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>eclipse-plugin</packaging>
+
+	<parent>
+		<groupId>io.tesla.tycho</groupId>
+		<artifactId>tycho-support</artifactId>
+		<version>0.0.7</version>
+	</parent>
+
+	<repositories>
+		<repository>
+			<id>eclipse</id>
+			<url>http://download.eclipse.org/releases/kepler</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>springsource-tool-suite</id>
+			<url>http://dist.springsource.com/release/TOOLS/update/e4.2</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>m2e</id>
+			<url>http://download.eclipse.org/technology/m2e/releases/1.4/1.4.0.20130601-0317</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>eclipse-cs</id>
+			<url>http://eclipse-cs.sf.net/update/</url>
+			<layout>p2</layout>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>invesdwin.de-releases</name>
+			<url>http://invesdwin.de:8081/artifactory/invesdwin-oss</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>invesdwin.de-snapshots</name>
+			<url>http://invesdwin.de:8081/artifactory/invesdwin-oss</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>
