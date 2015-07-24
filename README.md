@@ -1,6 +1,6 @@
 # invesdwin-checkstyle-plugin
 
-This plugin contains additional checks for checkstyle. It is packaged as an eclipse plugin, so it can be used with http://eclipse-cs.sourceforge.net by just putting the invesdin-checkstyle-plugin jar inside `eclipse/dropins/`.
+This plugin contains additional checks for checkstyle. It is packaged as an eclipse plugin, so it can be used with [Eclipse-CS](http://eclipse-cs.sourceforge.net) by just putting the invesdwin-checkstyle-plugin jar inside `eclipse/dropins/`.
 
 ## Maven
 
@@ -17,7 +17,6 @@ Dependency declaration:
 	<version>1.0.0-SNAPSHOT</version>
 </dependency>
 ```
-
 
 ## Checks
 
