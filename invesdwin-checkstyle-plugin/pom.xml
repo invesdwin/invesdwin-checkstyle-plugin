@@ -17,12 +17,12 @@
 	<repositories>
 		<repository>
 			<id>eclipse</id>
-			<url>http://download.eclipse.org/releases/kepler</url>
+			<url>http://download.eclipse.org/releases/mars</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
 			<id>springsource-tool-suite</id>
-			<url>http://dist.springsource.com/release/TOOLS/update/e4.2</url>
+			<url>http://dist.springsource.com/release/TOOLS/update/e4.5</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
