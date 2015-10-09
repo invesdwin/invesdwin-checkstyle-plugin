@@ -30,6 +30,7 @@ import com.puppycrawl.tools.checkstyle.api.TokenTypes;
  *
  * @author Travis Schneeberger
  */
+//itegrated to prevent compatability issues from occuring again, since eclipse-cs can't seem to decide about this class...
 public final class AnnotationUtility {
 
     /**
