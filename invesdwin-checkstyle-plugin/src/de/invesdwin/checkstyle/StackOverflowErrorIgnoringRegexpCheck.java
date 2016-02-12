@@ -1,10 +1,11 @@
 package de.invesdwin.checkstyle;
 
 import com.puppycrawl.tools.checkstyle.api.DetailAST;
-import com.puppycrawl.tools.checkstyle.checks.regexp.RegexpCheck;
+import com.puppycrawl.tools.checkstyle.api.ExtendableRegexpCheck;
 
-public class StackOverflowErrorIgnoringRegexpCheck extends RegexpCheck {
+public class StackOverflowErrorIgnoringRegexpCheck extends ExtendableRegexpCheck {
 
+	
 	@Override
 	public void beginTree(DetailAST rootAST) {
 		try {
