@@ -11,6 +11,7 @@ Require-Bundle: net.sf.eclipsecs.checkstyle,
  net.sf.eclipsecs.core,
  net.sf.eclipsecs.ui
 Import-Package: com.puppycrawl.tools.checkstyle.api,
- com.puppycrawl.tools.checkstyle.checks
+ com.puppycrawl.tools.checkstyle.checks,
+ org.apache.commons.lang3;version="3.1.0"
 Export-Package: de.invesdwin.checkstyle
 
