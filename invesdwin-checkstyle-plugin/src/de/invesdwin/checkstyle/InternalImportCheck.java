@@ -1,13 +1,13 @@
 package de.invesdwin.checkstyle;
 
-import com.puppycrawl.tools.checkstyle.api.Check;
+import com.puppycrawl.tools.checkstyle.api.AbstractCheck;
 import com.puppycrawl.tools.checkstyle.api.DetailAST;
 import com.puppycrawl.tools.checkstyle.api.FullIdent;
 import com.puppycrawl.tools.checkstyle.api.TokenTypes;
 
 // @NotThreadSafe
-public class InternalImportCheck extends Check {
-
+public class InternalImportCheck extends AbstractCheck {
+	
     private static final String MESSAGE = "Internal import from a different package branch is forbidden. "
             + "The internal package also has to be a descendant of this one "
             + "and needs to be on the same internal level.";
@@ -102,5 +102,15 @@ public class InternalImportCheck extends Check {
         }
         return count;
     }
+
+	@Override
+	public int[] getAcceptableTokens() {
+		return getDefaultTokens();
+	}
+
+	@Override
+	public int[] getRequiredTokens() {
+		return getDefaultTokens();
+	}
 
 }

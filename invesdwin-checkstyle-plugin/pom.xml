@@ -5,7 +5,7 @@
 
 	<groupId>de.invesdwin</groupId>
 	<artifactId>invesdwin-checkstyle-plugin</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<packaging>eclipse-plugin</packaging>
 
 	<parent>
@@ -17,17 +17,17 @@
 	<repositories>
 		<repository>
 			<id>eclipse</id>
-			<url>http://download.eclipse.org/releases/mars</url>
+			<url>http://download.eclipse.org/releases/oxygen</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
 			<id>springsource-tool-suite</id>
-			<url>http://dist.springsource.com/release/TOOLS/update/e4.5</url>
+			<url>http://dist.springsource.com/release/TOOLS/update/e4.7/</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
 			<id>m2e</id>
-			<url>http://download.eclipse.org/technology/m2e/releases/1.4/1.4.0.20130601-0317</url>
+			<url>http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
