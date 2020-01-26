@@ -4,14 +4,14 @@ Bundle-Name: invesdwin-eclipse-plugin
 Bundle-SymbolicName: invesdwin-checkstyle-plugin;singleton:=true
 Bundle-Version: 1.0.4
 Bundle-Vendor: de.invesdwin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Eclipse-RegisterBuddy: net.sf.eclipsecs.core
 Eclipse-LazyStart: true
-Require-Bundle: net.sf.eclipsecs.checkstyle,
- net.sf.eclipsecs.core,
- net.sf.eclipsecs.ui
+Require-Bundle: net.sf.eclipsecs.checkstyle;bundle-version="8.28.0",
+ net.sf.eclipsecs.core;bundle-version="8.28.0",
+ net.sf.eclipsecs.ui;bundle-version="8.28.0"
 Import-Package: com.puppycrawl.tools.checkstyle.api,
  com.puppycrawl.tools.checkstyle.checks,
- org.apache.commons.lang3;version="3.1.0"
+ org.apache.commons.lang3
 Export-Package: de.invesdwin.checkstyle
 
