@@ -1,15 +1,19 @@
 Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: invesdwin-checkstyle-plugin
-Bundle-SymbolicName: invesdwin-checkstyle-plugin;singleton:=true
-Bundle-Version: 1.0.4
-Bundle-Vendor: de.invesdwin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Eclipse-RegisterBuddy: net.sf.eclipsecs.core
-Eclipse-LazyStart: true
+Bundle-SymbolicName: invesdwin-checkstyle-plugin;singleton:=true
+Archiver-Version: Plexus Archiver
+Built-By: subes
 Require-Bundle: net.sf.eclipsecs.checkstyle,
  net.sf.eclipsecs.core,
  net.sf.eclipsecs.ui
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: de.invesdwin
 Import-Package: com.puppycrawl.tools.checkstyle.api,
  com.puppycrawl.tools.checkstyle.checks
+Eclipse-LazyStart: true
 Export-Package: de.invesdwin.checkstyle
+Bundle-Name: invesdwin-eclipse-plugin
+Bundle-Version: 1.0.4
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_131
