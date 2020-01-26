@@ -13,6 +13,9 @@
 		<version.tycho>1.6.0</version.tycho>
 	</properties>
 
+	<!-- need to manually export this right now from eclipse because tycho cannot 
+		resolve dependencies: https://stackoverflow.com/questions/18255911/checkstyle-custom-rules-eclipse-plugin -->
+
 	<build>
 		<plugins>
 			<plugin>
