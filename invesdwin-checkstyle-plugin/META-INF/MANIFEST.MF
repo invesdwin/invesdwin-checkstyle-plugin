@@ -7,7 +7,6 @@ Require-Bundle: net.sf.eclipsecs.checkstyle,
  net.sf.eclipsecs.core,
  net.sf.eclipsecs.ui
 Bundle-ManifestVersion: 2
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Bundle-Vendor: de.invesdwin
 Import-Package: com.puppycrawl.tools.checkstyle.api,
  com.puppycrawl.tools.checkstyle.checks
