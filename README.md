@@ -6,7 +6,7 @@ This plugin contains additional checks for checkstyle. It is packaged as an ecli
 
 Releases and snapshots are deployed to this maven repository:
 ```
-https://invesdwin.de/repo/invesdwin-oss-remote
+https://invesdwin.de/repo/invesdwin-oss-remote/
 ```
 
 Dependency declaration:
